@@ -9,15 +9,15 @@ const Navbar = () => {
           {/* <div id="title-container">
           <h1 id="title">Edel Zamora</h1>
         </div> */}
-          <a className="nav-element-about" href="/#about">
+          <a className="nav-element-about" href="/#/about">
             {" "}
             About{" "}
           </a>
-          <a className="nav-element-projects" href="/#project">
+          <a className="nav-element-projects" href="/#/project">
             {" "}
             Projects{" "}
           </a>
-          <a className="nav-element-resume" href="/#contact">
+          <a className="nav-element-resume" href="/#/contact">
             {" "}
             Contact{" "}
           </a>
