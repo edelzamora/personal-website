@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Navbar from "./Navbar";
 import { Data } from "./Data";
 import ImageTile from "./ImageTile";
@@ -7,13 +7,13 @@ const ProjectDetail = (props) => {
   const paramName = props.match.params.name;
   let projectObj = {};
   for (const [key, value] of Object.entries(Data[0])) {
-    if (value.id == paramName) {
+    if (value.id === paramName) {
       projectObj = { ...value };
     }
   }
 
   let projectLinks = [];
-  if (projectObj.links != 0) {
+  if (projectObj.links !== 0) {
     projectObj.links.forEach((element) => {
       projectLinks.push(<ImageTile link={element} />);
     });

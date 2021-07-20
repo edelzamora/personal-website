@@ -1,26 +1,23 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   return (
     <div>
       <header>
         <nav className="main-navbar">
-          {/* <div id="title-container">
-          <h1 id="title">Edel Zamora</h1>
-        </div> */}
-          <a className="nav-element-about" href="/#/about">
+          <HashLink smooth to="/#about" className="nav-element-about">
             {" "}
             About{" "}
-          </a>
-          <a className="nav-element-projects" href="/#/project">
+          </HashLink>
+          <HashLink smooth to="/#project" className="nav-element-projects">
             {" "}
             Projects{" "}
-          </a>
-          <a className="nav-element-resume" href="/#/contact">
+          </HashLink>
+          <HashLink smooth to="/#contact" className="nav-element-resume">
             {" "}
             Contact{" "}
-          </a>
+          </HashLink>
         </nav>
       </header>
     </div>
