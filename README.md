@@ -1,6 +1,8 @@
 ## 💡 About
 
-This is my personal website to use as a portfolio to showcase some projects and more about me.
+This is my personal website to use as a portfolio to showcase some projects and learn more about me. This is version 0.1.0.  
+I am going to add more information about me and the projects. Also implement better responsiveness.  
+My over all goal was to learn to how to use React.js, learn more javascript, how to use custom domains and deploy a web application to the internet.
 
 ![React](https://img.shields.io/badge/Frontend-React-blue)
 ![JS](https://img.shields.io/badge/Language-Javascript-green)
