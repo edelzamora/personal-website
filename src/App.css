@@ -28,7 +28,7 @@ section {
   text-decoration: none;
   display: inline-block;
   color: #e2ae6c;
-  background-color: #6e304b;
+  background-color: #22161c;
   padding: 10px 20px;
   margin-top: 20px;
   font-weight: 900;
@@ -50,7 +50,7 @@ section {
 }
 
 .modal {
-  background: #fff;
+  background: #6e304b;
   max-width: 800px;
   margin: 0 auto;
   height: auto;
@@ -66,7 +66,7 @@ a {
 }
 
 a:visited {
-  color: inherit;
+  color: #e2ae6c;
 }
 
 h2 {

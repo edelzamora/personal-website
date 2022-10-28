@@ -22,7 +22,11 @@ export default function Header() {
           justifyContent: "space-around",
         }}
       >
-        <h2>Resume</h2>
+        <h2>
+          <a href="https://s3.amazonaws.com/edelzamora.tech/index.html">
+            Resume
+          </a>
+        </h2>
         <h2>
           <a href="#certifications">Certifications</a>
         </h2>
