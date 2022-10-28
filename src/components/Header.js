@@ -23,7 +23,11 @@ export default function Header() {
         }}
       >
         <h2>
-          <a href="https://s3.amazonaws.com/edelzamora.tech/index.html">
+          <a
+            href="https://s3.amazonaws.com/edelzamora.tech/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Resume
           </a>
         </h2>
