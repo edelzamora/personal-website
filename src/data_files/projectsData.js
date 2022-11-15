@@ -4,16 +4,17 @@ export default {
     {
       item: "Personal Website",
       description:
-        "This website was built with React hosted in an AWS S3 bucket with cloudfront to deliver the content",
-      tech: ["VisualCode", "React", "JavaScript", "Html", "Css"],
-      aws: ["Amplify"],
+        "The website is the project and live demo! The site is hosted on AWS Amplify and using AWS Route53 for DNS routing. Written in JS, HTML, CSS with React.",
+      tech: ["VisualCode", "React", "JavaScript", "Html", "Css", "Git"],
+      aws: ["Amplify", "Route53"],
       url: "https://www.vectorlogo.zone/logos/python/python-ar21.svg",
     },
     {
-      item: "Bike Shop",
-      description: "",
-      tech: ["Bash", "Postgresql"],
-      aws: [],
+      item: "Cloud Resume Challenge",
+      description:
+        "The resume tab on this website is the project and live demo! The resume is hosted on a S3 bucket configured with strict IAM, bucket, and object policies. Written in HTML, CSS",
+      tech: ["Html", "Css"],
+      aws: ["S3"],
       url: "https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg",
     },
   ],

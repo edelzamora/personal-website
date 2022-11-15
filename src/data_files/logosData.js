@@ -87,5 +87,9 @@ export default {
       item: "DynamoDB",
       url: "https://sashee.github.io/aws-svg-icons/Architecture-Service-Icons_07302021/Arch_Database/64/Arch_Amazon-DynamoDB_64.svg",
     },
+    {
+      item: "Route53",
+      url: "https://sashee.github.io/aws-svg-icons/Architecture-Service-Icons_07302021/Arch_Networking-Content-Delivery/64/Arch_Amazon-Route-53_64.svg",
+    },
   ],
 };

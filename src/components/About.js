@@ -23,9 +23,10 @@ export default function About() {
         </span>
       </h1>
       <p>
-        I am a student at the University of Virginia. My major is computer
-        science and I am interested in software engineering roles. Other roles I
-        am interested in is cloud, devops, and back-end engineering.
+        I am a student at Western Governors University. I am currently getting
+        my Bachelor of Science in Cloud Computing and I am interested in cloud
+        engineering and devops roles. Other roles I am interested in is software
+        development, software engineer back-end engineering.
       </p>
     </div>
   );

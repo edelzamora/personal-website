@@ -13,18 +13,23 @@ export default function CertSection() {
         <div className="aws">
           <img
             style={imgSize}
-            src="https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Solutions-Architect_Associate_512x512.d82aee07920970350c427c8d0542bc239180a486.png"
-            alt="aws solutions architect associate logo"
-          />
-          <img
-            style={imgSize}
-            src="https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Cloud-Practitioner_512x512.bc006f14f986fa4f3ca238b0b62be458ce1fb5ce.png"
+            src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png"
             alt="aws cloud practitioner logo"
           />
           <img
             style={imgSize}
-            src="https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Sysops-Administrator_Associate_512x512.7ee4f9e7f4046349a3bfe27dcb1a54a340e04623.png"
+            src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png"
+            alt="aws solutions architect associate logo"
+          />
+          <img
+            style={imgSize}
+            src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-SysOps-Administrator-Associate_badge.c3586b02748654fb588633314dd66a1d6841893b.png"
             alt="aws sysops logo"
+          />
+          <img
+            style={imgSize}
+            src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Developer-Associate_badge.5c083fa855fe82c1cf2d0c8b883c265ec72a17c0.png"
+            alt="aws developer logo"
           />
         </div>
 

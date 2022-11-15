@@ -27,11 +27,6 @@ export default function ContactSection() {
             <ImageTile url="https://www.vectorlogo.zone/logos/linkedin/linkedin-ar21.svg" />
           </a>
         </div>
-        <div>
-          <a>
-            <ImageTile url="https://www.vectorlogo.zone/logos/gmail/gmail-ar21.svg" />
-          </a>
-        </div>
       </div>
     </section>
   );
