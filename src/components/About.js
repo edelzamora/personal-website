@@ -24,9 +24,9 @@ export default function About() {
       </h1>
       <p>
         I am a student at Western Governors University. I am currently getting
-        my Bachelor of Science in Cloud Computing and I am interested in cloud
-        engineering and devops roles. Other roles I am interested in is software
-        development, software engineer back-end engineering.
+        my Bachelor of Science in Cloud Computing and I am interested in cloud,
+        platform, devops engineering roles. Other roles I am interested in is
+        software development, software engineer and back-end engineering.
       </p>
     </div>
   );
