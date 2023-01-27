@@ -2,9 +2,22 @@ import React from "react";
 import { useState } from "react";
 import logoData from "../data_files/logosData";
 import SmallImageTile from "./SmallImageTile";
+import { useEffect, useRef } from "react";
 
 export default function ProjectTile(props) {
   const [isDisplayed, setIsDisplayed] = useState(false);
+  const ref = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setIsDisplayed(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
 
   function handleBtn() {
     setIsDisplayed((prevState) => !prevState);
@@ -53,53 +66,86 @@ export default function ProjectTile(props) {
         className="overlay"
         style={isDisplayed ? { display: "block" } : { display: "none" }}
       >
-        <div className="modal">
-          <p>{props.description}</p>
-
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <h4
-              style={
-                props.aws.length
-                  ? {
-                      margin: "0",
-                      display: "block",
-                      color: "#e2ae6c",
-                    }
-                  : { display: "none" }
-              }
-            >
-              AWS Services
-            </h4>
+        <div ref={ref} className="modal">
+          <div className="row">
             <div
               style={{
-                display: "flex",
-                justifyContent: "center",
+                background: "blue",
               }}
+              className="column"
             >
-              {awsTiles}
+              <p>{props.description}</p>
+            </div>
+            <div
+              style={{ background: "orange", width: "500px", padding: "20px" }}
+            >
+              Diagram
             </div>
 
-            <h4
-              style={{ color: "#e2ae6c", marginTop: "20px", marginBottom: "0" }}
-            >
-              Tools & Tech
-            </h4>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                width: "800px",
-                margin: "0 auto",
-                flexWrap: "wrap",
-              }}
-            >
-              {techTiles}
+            <div className="column" style={{ background: "red" }}>
+              <div
+                className="row"
+                style={{
+                  background: "forestgreen",
+                  flexDirection: "column",
+                }}
+              >
+                <h4
+                  style={
+                    props.aws.length
+                      ? {
+                          margin: "0",
+                          display: "block",
+                          color: "#e2ae6c",
+                        }
+                      : { display: "none" }
+                  }
+                >
+                  AWS Services
+                </h4>
+                <div>{awsTiles}</div>
+              </div>
+
+              <div
+                className="row"
+                style={{ background: "black", flexDirection: "column" }}
+              >
+                <h4
+                  style={{
+                    color: "#e2ae6c",
+                    marginTop: "20px",
+                    marginBottom: "0",
+                  }}
+                >
+                  Tools & Tech
+                </h4>
+                <div
+                  style={{
+                    display: "flex",
+                    margin: "0 auto",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  {techTiles}
+                </div>
+              </div>
             </div>
           </div>
-
-          <a className="btn" onClick={handleBtn}>
-            Close
-          </a>
+          <div style={{ background: "red" }}>
+            <div
+              className="column"
+              style={{
+                background: "lightgreen",
+                alignItems: "center",
+                justifyContent: "center",
+                height: "50px",
+              }}
+            >
+              <a className="overlay-btn" onClick={handleBtn}>
+                Close
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -23,7 +23,11 @@ export default function ContactSection() {
         }}
       >
         <div>
-          <a href="https://www.linkedin.com/in/edelzamora/">
+          <a
+            href="https://www.linkedin.com/in/edelzamora/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <ImageTile url="https://www.vectorlogo.zone/logos/linkedin/linkedin-ar21.svg" />
           </a>
         </div>
