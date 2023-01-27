@@ -113,6 +113,11 @@ h2 {
   height: 100%;
 }
 
+.description {
+  font-size: medium;
+  margin: 10px;
+}
+
 @media screen and (min-width: 800px) {
   .column {
     flex: 1

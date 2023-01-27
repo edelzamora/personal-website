@@ -70,14 +70,21 @@ export default function ProjectTile(props) {
           <div className="row">
             <div
               style={{
-                background: "blue",
+                textAlign: "justify",
+                background: "lightblue",
               }}
               className="column"
             >
-              <p>{props.description}</p>
+              <p className="description">{props.description}</p>
             </div>
             <div
-              style={{ background: "orange", width: "500px", padding: "20px" }}
+              style={{
+                background: "orange",
+                width: "500px",
+                padding: "20px",
+                marginLeft: "10px",
+                marginRight: "10px",
+              }}
             >
               Diagram
             </div>
