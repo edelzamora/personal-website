@@ -89,7 +89,7 @@ export default function ProjectTile(props) {
               Diagram
             </div>
 
-            <div className="column" style={{ background: "red" }}>
+            <div className="column">
               <div
                 className="row"
                 style={{
@@ -115,7 +115,11 @@ export default function ProjectTile(props) {
 
               <div
                 className="row"
-                style={{ background: "black", flexDirection: "column" }}
+                style={{
+                  background: "black",
+                  flexDirection: "column",
+                  margin: "0",
+                }}
               >
                 <h4
                   style={{
