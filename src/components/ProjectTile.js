@@ -2,12 +2,36 @@ import React from "react";
 import { useState } from "react";
 import logoData from "../data_files/logosData";
 import SmallImageTile from "./SmallImageTile";
+import { useEffect, useRef } from "react";
+import ResumeDiagram from "./ResumeDiagram";
+import SiteDiagram from "./SiteDiagram";
+import PlaceholderDiagram from "./PlaceholderDiagram";
 
 export default function ProjectTile(props) {
   const [isDisplayed, setIsDisplayed] = useState(false);
+  const ref = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setIsDisplayed(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
 
   function handleBtn() {
     setIsDisplayed((prevState) => !prevState);
+  }
+
+  let diagram = <PlaceholderDiagram />;
+  if (props.name === "Personal Website") {
+    diagram = <SiteDiagram />;
+  }
+  if (props.name === "Cloud Resume Challenge") {
+    diagram = <ResumeDiagram />;
   }
 
   const techTiles = logoData.logos.map((ele) => {
@@ -16,20 +40,19 @@ export default function ProjectTile(props) {
     }
   });
 
+  const isAWSTilesRendered = props.aws.length
+    ? {
+        display: "block",
+      }
+    : {
+        display: "none",
+      };
+
   const awsTiles = logoData.aws.map((ele) => {
     if (props.aws.includes(ele.item)) {
       return (
-        <div style={{ marginTop: "10px" }}>
-          <img
-            style={{
-              width: "50px",
-              margin: "0 5px",
-              border: "solid 2px black",
-              borderRadius: "5px",
-            }}
-            src={ele.url}
-            alt={ele.item}
-          />
+        <div>
+          <img className="img-tile" src={ele.url} alt={ele.item} />
           <p
             style={{ fontSize: "10px", margin: "0px", fontWeight: "bold" }}
           >{`${ele.item}`}</p>
@@ -37,69 +60,44 @@ export default function ProjectTile(props) {
       );
     }
   });
+  const InfoList = props.description.map((bullet) => {
+    return <p className="description-text">{bullet}</p>;
+  });
 
   return (
-    <div
-      style={{
-        background: "#f2f1ef",
-        color: "black",
-        padding: "50px",
-        margin: "10px auto",
-      }}
-    >
+    <div className="project-tile-container">
       <h3 style={{ margin: "0" }}>{props.name}</h3>
 
       <div
         className="overlay"
         style={isDisplayed ? { display: "block" } : { display: "none" }}
       >
-        <div className="modal">
-          <p>{props.description}</p>
-
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <h4
-              style={
-                props.aws.length
-                  ? {
-                      margin: "0",
-                      display: "block",
-                      color: "#e2ae6c",
-                    }
-                  : { display: "none" }
-              }
-            >
-              AWS Services
-            </h4>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              {awsTiles}
+        <div ref={ref} className="modal">
+          <div className="row">
+            <div className="column" id="description">
+              {InfoList}
             </div>
+            <div className="diagram">{diagram}</div>
 
-            <h4
-              style={{ color: "#e2ae6c", marginTop: "20px", marginBottom: "0" }}
-            >
-              Tools & Tech
-            </h4>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                width: "800px",
-                margin: "0 auto",
-                flexWrap: "wrap",
-              }}
-            >
-              {techTiles}
+            <div className="column">
+              <div className="tiles-column" style={isAWSTilesRendered}>
+                <h4 className="small-heading">AWS Services</h4>
+                <div className="tiles">{awsTiles}</div>
+              </div>
+
+              <div className="tiles-column">
+                <h4 className="small-heading">Tools & Tech</h4>
+                <div className="tiles">{techTiles}</div>
+              </div>
             </div>
           </div>
-
-          <a className="btn" onClick={handleBtn}>
-            Close
-          </a>
+          <div>
+            <div className="overlay-btn-column">
+              <a className="overlay-btn" onClick={handleBtn}>
+                Close
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
