@@ -1,4 +1,5 @@
 import React from "react";
+import Counter from "./Counter";
 
 export default function Header() {
   return (
@@ -15,7 +16,7 @@ export default function Header() {
       <div
         style={{
           display: "flex",
-          height: "30px",
+          height: "50px",
           padding: "30px 0px",
           backgroundColor: "#22161c",
           color: "white",
@@ -42,6 +43,10 @@ export default function Header() {
         </h2>
         <h2>
           <a href="#contact-me">Contact Me</a>
+        </h2>
+        <h2 id="counter">
+          <a>Visitor Number:</a>
+          <Counter />
         </h2>
       </div>
     </header>
