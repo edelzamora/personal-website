@@ -60,6 +60,9 @@ export default function ProjectTile(props) {
       );
     }
   });
+  const InfoList = props.description.map((bullet) => {
+    return <p className="description-text">{bullet}</p>;
+  });
 
   return (
     <div className="project-tile-container">
@@ -71,8 +74,8 @@ export default function ProjectTile(props) {
       >
         <div ref={ref} className="modal">
           <div className="row">
-            <div className="column">
-              <p className="description-text">{props.description}</p>
+            <div className="column" id="description">
+              {InfoList}
             </div>
             <div className="diagram">{diagram}</div>
 

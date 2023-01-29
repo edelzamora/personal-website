@@ -4,7 +4,7 @@ export default function ImageTile(props) {
   return (
     <div
       style={{
-        background: "#f2f1ef",
+        background: "white",
         margin: "10px 5px",
         borderRadius: "10px",
         boxShadow: "2px 4px black",
