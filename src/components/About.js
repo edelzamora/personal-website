@@ -10,7 +10,7 @@ export default function About() {
       }}
     >
       <h1 style={{ fontSize: "50px", marginTop: "200px" }}>
-        Hello, my name{" "}
+        Hello, my name is{" "}
         <span
           style={{
             display: "block",
