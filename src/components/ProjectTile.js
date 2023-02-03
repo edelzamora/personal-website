@@ -79,7 +79,7 @@ export default function ProjectTile(props) {
             </div>
             <div className="diagram">{diagram}</div>
 
-            <div className="column">
+            <div className="column" id="tech">
               <div className="tiles-column" style={isAWSTilesRendered}>
                 <h4 className="small-heading">AWS Services</h4>
                 <div className="tiles">{awsTiles}</div>
