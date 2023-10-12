@@ -25,6 +25,15 @@ export default function Header() {
       >
         <h2>
           <a
+            href="https://blog.edelzamora.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Blog
+          </a>
+        </h2>
+        <h2>
+          <a
             href="https://s3.amazonaws.com/edelzamora.tech/index.html"
             target="_blank"
             rel="noopener noreferrer"
