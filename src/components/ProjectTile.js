@@ -34,6 +34,14 @@ export default function ProjectTile(props) {
     diagram = <ResumeDiagram />;
   }
 
+  const isTechTilesRendered = props.tech.length
+    ? {
+        display: "block",
+      }
+    : {
+        display: "none",
+      };
+
   const techTiles = logoData.logos.map((ele) => {
     if (props.tech.includes(ele.item)) {
       return <SmallImageTile url={ele.url} title={ele.title} />;
@@ -60,6 +68,7 @@ export default function ProjectTile(props) {
       );
     }
   });
+
   const InfoList = props.description.map((bullet) => {
     return <p className="description-text">{bullet}</p>;
   });
@@ -85,7 +94,7 @@ export default function ProjectTile(props) {
                 <div className="tiles">{awsTiles}</div>
               </div>
 
-              <div className="tiles-column">
+              <div className="tiles-column" style={isTechTilesRendered}>
                 <h4 className="small-heading">Tools & Tech</h4>
                 <div className="tiles">{techTiles}</div>
               </div>

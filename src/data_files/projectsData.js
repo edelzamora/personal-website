@@ -50,5 +50,23 @@ export default {
       aws: ["S3", "Amplify", "Route53", "DynamoDB", "API Gateway", "Lambda"],
       url: "https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg",
     },
+    {
+      item: "EZMonitor",
+      description: [
+        "The project is under construction. It is a work in progress with code on GitHub and no live demo.",
+      ],
+      tech: [],
+      aws: [],
+      url: "https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg",
+    },
+    {
+      item: "CloudLab Guide",
+      description: [
+        "The project is under construction. It is a work in progress with code on GitHub and no live demo.",
+      ],
+      tech: [],
+      aws: [],
+      url: "https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg",
+    },
   ],
 };
