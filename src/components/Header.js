@@ -34,7 +34,7 @@ export default function Header() {
         </h2>
         <h2>
           <a
-            href="https://s3.amazonaws.com/edelzamora.tech/index.html"
+            href="https://resume.edelzamora.tech"
             target="_blank"
             rel="noopener noreferrer"
           >

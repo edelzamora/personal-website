@@ -10,37 +10,54 @@ export default {
       url: "https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg",
     },
     {
-      item: "Java",
-      url: "https://www.vectorlogo.zone/logos/java/java-ar21.svg",
-    },
-    {
-      item: "React",
-      url: "https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg",
-    },
-    {
-      item: "Flask",
-      url: "https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg",
-    },
-    {
-      item: "VisualCode",
-      url: "https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg",
-    },
-    {
-      item: "Sqlite",
-      url: "https://www.vectorlogo.zone/logos/sqlite/sqlite-ar21.svg",
-    },
-    {
-      item: "Html",
-      url: "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg",
-    },
-    {
-      item: "Css",
-      url: "https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg",
+      item: "Golang",
+      url: "https://www.vectorlogo.zone/logos/golang/golang-ar21.svg",
     },
     {
       item: "Bash",
       url: "https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-ar21.svg",
     },
+    {
+      item: "AWS",
+      url: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg",
+    },
+    {
+      item: "Azure",
+      url: "https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg",
+    },
+    {
+      item: "GCP",
+      url: "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg",
+    },
+    {
+      item: "Terraform",
+      url: "https://www.vectorlogo.zone/logos/terraformio/terraformio-ar21.svg",
+    },
+    {
+      item: "Linux",
+      url: "https://www.vectorlogo.zone/logos/linux/linux-ar21.svg",
+    },
+    {
+      item: "FedoraLinux",
+      url: "https://www.vectorlogo.zone/logos/getfedora/getfedora-ar21.svg",
+    },
+    {
+      item: "DebianLinux",
+      url: "https://www.vectorlogo.zone/logos/debian/debian-ar21.svg",
+    },
+    {
+      item: "UbuntuLinux",
+      url: "https://www.vectorlogo.zone/logos/ubuntu/ubuntu-ar21.svg",
+    },
+    {
+      item: "Ansible",
+      url: "https://www.vectorlogo.zone/logos/ansible/ansible-ar21.svg",
+    },
+    {
+      item: "Github",
+      url: "https://www.vectorlogo.zone/logos/github/github-ar21.svg",
+    },
+    
     {
       item: "Docker",
       url: "https://www.vectorlogo.zone/logos/docker/docker-ar21.svg",
@@ -48,22 +65,6 @@ export default {
     {
       item: "Kubernetes",
       url: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg",
-    },
-    {
-      item: "Postgresql",
-      url: "https://www.vectorlogo.zone/logos/postgresql/postgresql-ar21.svg",
-    },
-    {
-      item: "Git",
-      url: "https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg",
-    },
-    {
-      item: "Github",
-      url: "https://www.vectorlogo.zone/logos/github/github-ar21.svg",
-    },
-    {
-      item: "Linux",
-      url: "https://www.vectorlogo.zone/logos/linux/linux-ar21.svg",
     },
   ],
   aws: [
