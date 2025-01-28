@@ -55,16 +55,25 @@ export default {
       description: [
         "The project is under construction. It is a work in progress with code on GitHub and no live demo.",
       ],
-      tech: [],
+      tech: ["Python"],
       aws: [],
       url: "https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg",
     },
     {
       item: "CloudLab Guide",
       description: [
+        "The project is under construction. It is a work in progress with code on <a href='https://github.com/edelzamora/CloudLab'>Github</a> and no live demo.",
+      ],
+      tech: ["Terraform", "AWS"],
+      aws: [],
+      url: "https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg",
+    },
+    {
+      item: "Homelab",
+      description: [
         "The project is under construction. It is a work in progress with code on GitHub and no live demo.",
       ],
-      tech: [],
+      tech: ["Ansible", "Linux", "DebianLinux", "Terraform", "FedoraLinux", "Docker", "Kubernetes"],
       aws: [],
       url: "https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg",
     },
