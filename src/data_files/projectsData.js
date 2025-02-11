@@ -51,6 +51,20 @@ export default {
       url: "https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg",
     },
     {
+      item: "FlyBy",
+      description: [
+        `This project uses an ADS-B Receiver to capture real-time data from aircraft flying nearby. I wanted to display what the receiver picked up near me. The goal is to visualize the detected aircraft using a custom dashboard and add an image.
+        Even with a stock antenna, the receiver picks up a surprising number of aircraft. This project processes and displays the data the aircrafts.
+        Work In Progress (WIP) but a demo can be found here -> <a href="flyby.edelzamora.tech">flyby.edelzamora.tech</a>
+        Code can be found on my github -> <a href="github.com/edelzamora/flyby">github</a>
+
+        `,
+      ],
+      tech: ["Python", "Golang", "Docker", "Github", "UbuntuLinux"],
+      aws: [],
+      url: "https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg",
+    },
+    {
       item: "EZMonitor",
       description: [
         "The project is under construction. It is a work in progress with code on GitHub and no live demo.",
